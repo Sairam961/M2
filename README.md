@@ -163,11 +163,10 @@ int main() {
     return 0;
 }
 
-
 ```
 
 ## OUTPUT:
-
+![alt text](image-3.png)
 
 
 
@@ -194,10 +193,26 @@ d.	After the loop, print the factorial value.
 5.	End
 
 ## PROGRAM:
-
+```
+#include <stdio.h>
+void fact() {
+    int i, N;
+    int factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &N);
+    for (i = 1; i <= N; i++) {
+        factorial *= i;
+    }
+    printf("Factorial of %d is %d\n", N, factorial);
+}
+int main() {
+    fact();
+    return 0;
+}
+```
 
 ## OUTPUT:
-
+![alt text](image-4.png)
 ## RESULT:
 The program correctly computes the factorial of a given number using a separate function and displays the result.
  
